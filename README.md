@@ -1,72 +1,114 @@
+<div align="center">
+
 ```
-╔═══════════════════════════════════════════════════════════════╗
-║  dhruv · AI engineer · security researcher                   ║
-║  2nd year ISE @ NIE Mysore (2024–2028)                       ║
-╚═══════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════╗
+║  dhruv@nie-mysore:~$  whoami                                ║
+║  > AI engineer · security researcher · 2nd year ISE         ║
+║  > multi-agent systems · LLM infra · multimodal deep learn  ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
-> building multi-agent systems, LLM infra, and multimodal deep learning  
-> from a non-tier-1 college — because geography shouldn't cap ambition.
+
+</div>
 
 ---
 
-## ⬡ projects
+<div align="center">
 
-### [AVRA — Agentic Vulnerability Research Assistant](https://github.com/Dhruv/avra) `live`
-5-node LangGraph pipeline for automated code vulnerability analysis. Integrates Semgrep + Bandit for static analysis, Groq (`llama-3.3-70b`) for reasoning, and surfaces findings through a React dashboard + FastAPI backend.
+### `// stack`
 
-`LangGraph` `FastAPI` `Groq` `Semgrep` `Bandit` `React` `Python`
+[![Python](https://skillicons.dev/icons?i=python)](https://python.org)
+[![PyTorch](https://skillicons.dev/icons?i=pytorch)](https://pytorch.org)
+[![FastAPI](https://skillicons.dev/icons?i=fastapi)](https://fastapi.tiangolo.com)
+[![React](https://skillicons.dev/icons?i=react)](https://react.dev)
+[![Docker](https://skillicons.dev/icons?i=docker)](https://docker.com)
+[![Linux](https://skillicons.dev/icons?i=linux)](https://linux.org)
+[![Git](https://skillicons.dev/icons?i=git)](https://git-scm.com)
+[![GitHub](https://skillicons.dev/icons?i=github)](https://github.com)
 
----
+![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-0d1117?style=flat-square&logoColor=4ade80&color=0d1117&labelColor=1a2e1a)
+![Semgrep](https://img.shields.io/badge/Semgrep-1C1C1C?style=flat-square&logoColor=white)
+![Bandit](https://img.shields.io/badge/Bandit-222?style=flat-square&logoColor=white)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
-### [ARIA — Multi-Agent Research Intelligence](https://github.com/Dhruv/aria) `live`
-8-agent orchestration system with adversarial critique loops — Devil's Advocate triggers Analyst revision when weak claims exceed 30%. Full pipeline observability via `agent_logs` table (every agent's I/O + duration in ms). Parallel report generation in 3 formats.
-
-`FastAPI` `Uvicorn` `asyncio` `Groq` `SQLite` `SSE` `Python`
-
----
-
-### [Deepfake Detector — Multimodal Forensics](https://github.com/Dhruv/deepfake-detector) `in progress`
-Cross-attention fusion classifier over three modalities: EfficientNet-B4 + SRM noise filters (image), LFCC/LCNN (audio), R3D-18 3D CNN (video). 512-dim embeddings per modality → single fake probability. `fake_weight=2.0` asymmetric loss because false negatives cost more. Grad-CAM heatmaps + ONNX export.
-
-`PyTorch` `EfficientNet-B4` `MTCNN` `Gradio` `ONNX` `FastAPI`
-
----
-
-### [StudyAI — Context-Aware Study Assistant](https://github.com/Dhruv/studyai) `live`
-PDF-to-chat pipeline with SSE streaming, flashcard generation, multi-model selector (Llama 3.3-70b, Mixtral, Gemma). Auto-upgrades SQLite→PostgreSQL via `DATABASE_URL` — the scalability answer is in the architecture.
-
-`Flask` `Groq` `PyPDF2` `SQLite` `Waitress` `SSE` `marked.js`
+</div>
 
 ---
 
-## ⬡ stack
+### `// projects`
 
-| domain | tools |
-|---|---|
-| **AI / ML** | PyTorch · LangGraph · Groq · EfficientNet · ONNX · Grad-CAM |
-| **backend** | FastAPI · Flask · asyncio · SSE · SQLite · PostgreSQL |
-| **security** | Semgrep · Bandit · Burp Suite · subfinder · httpx · gau |
-| **frontend / infra** | React · Gradio · Render · Docker |
+```
+⬡ AVRA — Agentic Vulnerability Research Assistant          [LIVE]
+```
+5-node LangGraph pipeline for automated code vulnerability analysis. Groq (`llama-3.3-70b`) for reasoning, Semgrep + Bandit for static analysis, React dashboard + FastAPI backend.
 
----
-
-## ⬡ security research
-
-**Circle Bug Bounty Program — Report #3667751**  
-Identified missing per-vote signature verification in the Malachite consensus protocol (`liveness.rs` — `on_round_certificate` vs `on_vote()` path). CWE-390. Severity conditional on host implementation quality.
-
-Passive recon workflow: `subfinder → httpx → gau → waybackurls → Burp Suite`
+![LangGraph](https://img.shields.io/badge/LangGraph-1a2e1a?style=flat-square) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square) ![Semgrep](https://img.shields.io/badge/Semgrep-1C1C1C?style=flat-square) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 
 ---
 
-## ⬡ reach me
+```
+⬡ ARIA — Multi-Agent Research Intelligence                [LIVE]
+```
+8-agent orchestration system. Devil's Advocate triggers Analyst revision at >30% weak claims. Full pipeline observability via `agent_logs` table (I/O + latency per agent). Parallel report gen in 3 formats.
 
-[![HackerOne](https://img.shields.io/badge/HackerOne-grey?style=flat&logo=hackerone)](https://hackerone.com/toji_2712)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/connectwdhruv/)
-[![Instagram](https://img.shields.io/badge/Instagram-grey?style=flat&logo=instagram)](https://www.instagram.com/adonisdhruv/)
-
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![asyncio](https://img.shields.io/badge/asyncio-3776AB?style=flat-square&logo=python&logoColor=white) ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square) ![SSE](https://img.shields.io/badge/SSE-1C1C1C?style=flat-square) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 
 ---
 
-<sub>NIE Mysore · ISE · Batch 2024–2028 
+```
+⬡ Deepfake Detector — Multimodal Forensics          [IN PROGRESS]
+```
+Cross-attention fusion (512-dim embeddings) over EfficientNet-B4 + SRM filters (image), LFCC/LCNN (audio), R3D-18 3D CNN (video). `fake_weight=2.0` asymmetric loss — false negatives cost more. Grad-CAM + ONNX export.
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![EfficientNet](https://img.shields.io/badge/EfficientNet--B4-1C1C1C?style=flat-square) ![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white) ![Gradio](https://img.shields.io/badge/Gradio-FF7C00?style=flat-square)
+
+---
+
+```
+⬡ StudyAI — Context-Aware Study Assistant               [LIVE]
+```
+PDF-to-chat with SSE streaming, flashcard gen, multi-model selector. Auto-upgrades SQLite → PostgreSQL via `DATABASE_URL` — the scalability answer is in the architecture.
+
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square) ![PyPDF2](https://img.shields.io/badge/PyPDF2-1C1C1C?style=flat-square) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+
+---
+
+### `// security research`
+
+```
+$ cat bounties.log
+
+[+] Circle Bug Bounty Program
+    Report  : #3667751
+    Target  : Malachite consensus protocol (liveness.rs)
+    Finding : Missing per-vote signature verification
+              on_round_certificate vs on_vote() path
+    CWE     : CWE-390
+    Recon   : subfinder → httpx → gau → waybackurls → Burp Suite
+```
+
+![HackerOne](https://img.shields.io/badge/HackerOne-494649?style=flat-square&logo=hackerone&logoColor=white)
+
+---
+
+<div align="center">
+
+### `// stats`
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4ade80&icon_color=4ade80&text_color=94a3b8&ring_color=4ade80)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4ade80&text_color=94a3b8)
+
+---
+
+### `// reach me`
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/connectwdhruv)
+[![HackerOne](https://img.shields.io/badge/HackerOne-494649?style=flat-square&logo=hackerone&logoColor=white)](https://hackerone.com/toji_2712)
+[![Instagram](https://img.shields.io/badge/Instagram-black?style=flat-square&logo=angellist&logoColor=white)](https://instagram.com/adonisdhruv)
+
+<sub>NIE Mysore · ISE · Batch 2024–2028 · CGPA 7.6</sub>
+
+</div>
