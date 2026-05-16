@@ -12,7 +12,7 @@
 
 ## ⬡ projects
 
-### [AVRA — Agentic Vulnerability Research Assistant](https://github.com/Dhruv/avra) `WIP`
+### [AVRA — Agentic Vulnerability Research Assistant](https://github.com/Dhruv/avra) `live`
 5-node LangGraph pipeline for automated code vulnerability analysis. Integrates Semgrep + Bandit for static analysis, Groq (`llama-3.3-70b`) for reasoning, and surfaces findings through a React dashboard + FastAPI backend.
 
 `LangGraph` `FastAPI` `Groq` `Semgrep` `Bandit` `React` `Python`
