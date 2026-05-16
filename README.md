@@ -101,6 +101,6 @@ $ cat bounties.log
 [![HackerOne](https://img.shields.io/badge/HackerOne-494649?style=flat-square&logo=hackerone&logoColor=white)](https://hackerone.com/toji_2712)
 [![Instagram](https://img.shields.io/badge/Instagram-black?style=flat-square&logo=angellist&logoColor=white)](https://instagram.com/adonisdhruv)
 
-<sub>NIE Mysore · ISE · Batch 2024–2028 · CGPA 7.6</sub>
+<sub>NIE Mysore · ISE · Batch 2024–2028 
 
 </div>
