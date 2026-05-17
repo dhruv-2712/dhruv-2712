@@ -61,8 +61,7 @@
 ```
 ⬡ Deepfake Detector — Multimodal Forensics          [IN PROGRESS]
 ```
-Cross-attention fusion (512-dim embeddings) over EfficientNet-B4 + SRM filters (image), LFCC/LCNN (audio), R3D-18 3D CNN (video). `fake_weight=2.0` asymmetric loss — false negatives cost more. Grad-CAM + ONNX export.
-
+A multimodal deepfake detection system that analyses images, audio, and video using three specialist neural networks fused via cross-attention.
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![EfficientNet](https://img.shields.io/badge/EfficientNet--B4-1C1C1C?style=flat-square) ![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white) ![Gradio](https://img.shields.io/badge/Gradio-FF7C00?style=flat-square)
 
 ---
